@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* Sayfa genel ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Formun tasarımı */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* "Araç Kullanıyor musunuz?" checkbox'ı için stil */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Disabled (deaktif) inputları daha belirgin yapalım */
+input:disabled {
+    background-color: #e0e0e0;
+    color: #aaa;
+}
+
+/* Sonuç kısmını düzenlemek için yeni stil */
+#result {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #27ae60; /* Yeşil tonlarında daha doğal bir renk */
+    font-weight: bold;
+    background-color: #ecf8e1; /* Hafif yeşil bir arka plan */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sonuç metninin içeriği */
+#result span {
+    color: #2ecc71; /* Sonuç değeri için daha dikkat çekici renk */
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+/* Başlık düzenlemeleri (H2) */
+h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}

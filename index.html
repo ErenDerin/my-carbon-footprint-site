@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Karbon Ayak İzi Hesaplama</title>
+</head>
+<body>
+    <h1>Karbon Ayak İzi Hesaplama</h1>
+    <form id="carbonForm">
+        <label for="name">İsminizi Girin:</label>
+        <input type="text" id="name" required>
+
+        <label for="people">Evde Kaç Kişi Yaşıyor?</label>
+        <input type="number" id="people" required>
+
+        <label for="electricity">Aylık Elektrik Tüketimi (kWh):</label>
+        <input type="number" id="electricity" required>
+
+        <label for="gas">Aylık Doğal Gaz Tüketimi (m³):</label>
+        <input type="number" id="gas" required>
+
+        <label for="transportCheck">Araç Kullanıyor musunuz?</label>
+        <input type="checkbox" id="transportCheck" onclick="toggleTransportInput()">
+
+        <label for="transport">Günlük Araç Kullanımı (km):</label>
+        <input type="number" id="transport" disabled>
+
+        <label for="food">Haftalık Et Tüketimi (porsiyon):</label>
+        <input type="number" id="food" required>
+
+        <label for="flightCheck">Yılda Uçuş Yapıyor musunuz?</label>
+        <input type="checkbox" id="flightCheck" onclick="toggleFlightInput()">
+
+        <label for="flight">Yılda Kaç Uçuş Yapıyorsunuz?</label>
+        <input type="number" id="flight" disabled>
+
+        <label for="electronics">Aylık Elektronik Cihaz Kullanımı (adet):</label>
+        <input type="number" id="electronics" required>
+
+        <label for="waterUsage">Aylık Su Tüketimi (litre):</label>
+        <input type="number" id="waterUsage" required>
+
+        <label for="recycling">Geri Dönüşüm Yapıyor musunuz?</label>
+        <input type="checkbox" id="recycling">
+
+        <label for="construction">Evde İnşaat ve Yenileme Faaliyetleri?</label>
+        <input type="checkbox" id="construction" onclick="toggleConstructionInput()">
+
+        <button type="button" onclick="calculateCarbonFootprint()">Hesapla</button>
+    </form>
+
+    <h2>Sonuçlar Sıralaması</h2>
+    <table id="rankingTable">
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Karbon Ayak İzi (kg CO2)</th>
+                <th>Puan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sonuçlar buraya eklenecek -->
+        </tbody>
+    </table>
+
+    <script src="carbonFootprint.js"></script>
+</body>
+</html>
